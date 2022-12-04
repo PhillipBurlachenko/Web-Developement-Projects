@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+    <meta charset = "UTF-8">
+    <title>Fishing The Pacific Northwest</title>
+    <link rel = "stylesheet" type = "text/css" href = "../css/main.css">
+    <style>
+    body{
+        background-image: url(../images/background.jpg);
+        
+        }
+    </style>
+</head>
+<body>
+        <div id = "container">
+           <header>
+            <img src = "../images/fishLogo.png" class = "ourLogo" alt = "logo" width = "150" height = "150">
+             <h1 style="color: black;">Fishing The Pacific Northwest</h1>
+               
+                <nav class = "clearFloat">
+                <ul>
+                    <li>
+                        <a href = "../index.html">Home</a>
+                   </li>
+                    <li>
+                        <a href = "starting.html">Starting Out</a>
+                   </li>
+                    <li>
+                        <a href = "species.html">Species</a>
+                   </li>
+                  
+                    <li>
+                        <a href = "entertain.html">Entertainment</a>
+                   </li>
+                    
+                    <li>
+                        <a href = "contact.html" class = "current">Contact Us</a>
+                   </li>
+                </ul>
+            </nav>
+           </header>
+
+<section>            
+<article>
+<p>To contact us please fill out the form below. We will try to respond as soon as possible.</p>          
+            
+</article>
+</section>            
+ <div id = "contactForm">
+                    <form action= "../scripts/contact.php" method="post">
+                        <fieldset>
+                        <legend>Contact Info</legend>
+                    <label> First Name: 
+                        <input type= "text" autofocus required placeholder="Required"
+                        name="firstName" id="firstName" size="25" maxlength="50">
+                    </label>
+                    <br>
+                    <label for="lastName"> Last Name:</label>
+                        <input type= "text" required placeholder="Required"
+                        name="lastName" id="lastName" size="25" maxlength="50">
+                    <br>
+                    <label for="email"> Email: </label>
+                    <input type="email" name="email" id="email" placeholder="someone@domain.com">
+                    <br>
+                    <label for="phonenumber"> Phone Number: </label>
+                    <input type="phonenumber" name="phonenumber" id="phonenumber" placeholder="(555)-555-5555">
+                    <br>
+                        <label for="reason">Reasoning:</label>
+                        <select name="reason" id="reason">
+                        <option>choose one</option>
+                        <option value="Question">Question</option>
+                           <option value="Sponsorship">Sponsorship</option>
+                           <option value="Recommendation">Recommendation</option>
+                    </select>
+                    <h4>Choose Best Time to call:</h4>   
+                    <label for="am">AM</label>
+                        <input type="radio" name="callTime" id="AM">
+                        <label for="pm">PM</label>
+                        <input type="radio" name="callTime" id="PM">
+                    <label for="time"> Time: </label>
+                    <input type="time" name="time" id="time" placeholder="00:00">
+                        <br>
+                        <label for="comments">Comments:</label>
+                        <br> 
+                        <textarea name = "comments" id="comments" cols="20" rows="20">  </textarea>
+                        </fieldset>
+                        <input type="submit" name="submit" id="submit" value="Send Form"> 
+                        <input type="reset" name="reset" id="reset" value="Restart Form">
+                    </form>
+                </div>            
+            
+            
+            
+            
+            
+        <footer>
+        <p>&copy;2018 Phillip B.</p>
+        </footer>
+            
+        </div> 
+
+</body>
+</html>
